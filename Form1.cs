@@ -11,16 +11,20 @@ using System.Windows.Forms;
 
 namespace controlDeColores
 {
-    public partial class Form1 : Form
+    public partial class ControlColores : Form
     {
         private int colorRed;
         private int colorGreen;
         private int colorBlue;
-        private int valueRGB;
-        private int valueHEX;
+        //private int valueRGB;
+        //private int valueHEX;
+        private string nameBtnColor = "";
+        private Color backColorBtn;
+        private List<Color> ListColors = new List<Color>();
+
         SerialPort serialPortX = new SerialPort();
 
-        public Form1()
+        public ControlColores()
         {
             InitializeComponent();
         }
@@ -87,31 +91,115 @@ namespace controlDeColores
 
         private void btnSincronizar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                serialPortX.PortName = cbSerialPort.Text;
-                serialPortX.BaudRate = 9600;
-                serialPortX.DataBits = 8;
-                serialPortX.Parity = Parity.None;
-                serialPortX.StopBits = StopBits.One;
-                serialPortX.RtsEnable = true;
 
-                serialPortX.Open();
-                serialPortX.WriteLine(valueHEX.ToString());
-                serialPortX.Close();
+            pnlLed1.BackColor = backColorBtn;
+            pnlLed2.BackColor = backColorBtn;
+            pnlLed3.BackColor = backColorBtn;
+            pnlLed4.BackColor = backColorBtn;
+            pnlLed5.BackColor = backColorBtn;
+            pnlLed6.BackColor = backColorBtn;
 
-            }
-            catch (Exception ex)
+            //try
+            //{
+            //    serialPortX.PortName = cbSerialPort.Text;
+            //    serialPortX.BaudRate = 9600;
+            //    serialPortX.DataBits = 8;
+            //    serialPortX.Parity = Parity.None;
+            //    serialPortX.StopBits = StopBits.One;
+            //    serialPortX.RtsEnable = true;
+
+            //    serialPortX.Open();
+            //    serialPortX.WriteLine(valueHEX.ToString());
+            //    serialPortX.Close();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error algo ha salido mal", ex.Message);
+            //}
+        }
+
+        private void btnGuardarColor_Click(object sender, EventArgs e)
+        {
+            foreach(Button btnColor in grpControl.Controls)
             {
-                MessageBox.Show("Error algo ha salido mal", ex.Message);
+                if (btnColor.Name == nameBtnColor)
+                {
+                    btnColor.BackColor = pnlColor.BackColor;
+                }
             }
         }
 
-        private void btnMostrarControl_Click(object sender, EventArgs e)
+        private void btnCtrl1_Click(object sender, EventArgs e)
         {
-            Control control = new Control();
-            control.Show();
-            this.Hide();
+            nameBtnColor = btnCtrl1.Name;
+            backColorBtn = btnCtrl1.BackColor;
+        }
+
+        private void btnCtrl2_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl2.Name;
+            backColorBtn = btnCtrl2.BackColor;
+        }
+
+        private void btnCtrl3_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl3.Name;
+            backColorBtn = btnCtrl3.BackColor;
+        }
+
+        private void btnCtrl4_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl4.Name;
+            backColorBtn = btnCtrl4.BackColor;
+        }
+
+        private void btnCtrl5_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl5.Name;
+            backColorBtn = btnCtrl5.BackColor;
+        }
+
+        private void btnCtrl6_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl6.Name;
+            backColorBtn = btnCtrl6.BackColor;
+        }
+
+        private void btnCtrl7_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl7.Name;
+            backColorBtn = btnCtrl7.BackColor;
+        }
+
+        private void btnCtrl8_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl8.Name;
+            backColorBtn = btnCtrl8.BackColor;
+        }
+
+        private void btnCtrl9_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl9.Name;
+            backColorBtn = btnCtrl9.BackColor;
+        }
+
+        private void btnCtrl10_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl10.Name;
+            backColorBtn = btnCtrl10.BackColor;
+        }
+
+        private void btnCtrl11_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl11.Name;
+            backColorBtn = btnCtrl11.BackColor;
+        }
+
+        private void btnCtrl12_Click(object sender, EventArgs e)
+        {
+            nameBtnColor = btnCtrl12.Name;
+            backColorBtn = btnCtrl12.BackColor;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -124,6 +212,17 @@ namespace controlDeColores
 
         }
 
-       
+        private void btnCrearSucesion_Click(object sender, EventArgs e)
+        {
+            foreach(var color in ListColors)
+            {
+                lbColores.Items.Add(color.ToString());
+            }
+        }
+
+        private void btnAgregarColorSucesion_Click(object sender, EventArgs e)
+        {
+            ListColors.Add(backColorBtn);
+        }
     }
 }

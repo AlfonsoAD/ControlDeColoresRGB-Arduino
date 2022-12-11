@@ -10,3 +10,14 @@ C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\Unidad03\Semaforo\co
 C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\Unidad03\Semaforo\controlDeColores\obj\Debug\controlDeColores.exe
 C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\Unidad03\Semaforo\controlDeColores\obj\Debug\controlDeColores.pdb
 C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\Unidad03\Semaforo\controlDeColores\obj\Debug\controlDeColores.Control.resources
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\bin\Debug\controlDeColores.exe.config
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\bin\Debug\controlDeColores.exe
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\bin\Debug\controlDeColores.pdb
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.csproj.AssemblyReference.cache
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.csproj.SuggestedBindingRedirects.cache
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.Properties.Resources.resources
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.csproj.GenerateResource.cache
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.csproj.CoreCompileInputs.cache
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.exe
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.pdb
+C:\Users\andra\Documents\9no Semestre\SISTEMAS PROGRAMABLES\controlDeColores\obj\Debug\controlDeColores.ControlColores.resources
